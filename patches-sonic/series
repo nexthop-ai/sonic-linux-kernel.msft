@@ -251,6 +251,12 @@ qsa-2026-apparmor/0009-apparmor-fix-differential-encoding-verification.patch
 qsa-2026-apparmor/0010-apparmor-fix-race-on-rawdata-dereference.patch
 qsa-2026-apparmor/0011-apparmor-fix-race-between-freeing-data-and-fs-access.patch
 
+# Atlantic AQC (ATL2) descriptor cache invalidation on hw_stop().
+# Fixes IOMMU page faults and eth0 link flaps on ifdown/ifup (e.g. ZTP
+# networking restarts). Upstream 7526183cfdbe, in stable since v6.12.61.
+# Drop when kernel >= 6.12.61
+0001-net-aquantia-Add-missing-descriptor-cache-invalidati.patch
+
 #
 #
 ############################################################
